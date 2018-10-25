@@ -31,7 +31,7 @@ $ go build singlePrint.go
 $ sudo ./singleFprint
 ```
 
-PS: You need to use the sudo command to allow access the device.
+PS: You need to use the sudo command to allow low level access to the device.
 
 ## Issues
 
