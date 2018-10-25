@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"gofprint"
+	"github.com/caws/go-fprint"
 )
 
 func main() {
@@ -17,8 +17,8 @@ func main() {
 	fmt.Println("Opened device. It's now time to enroll your finger.")
 	data := gofprint.GoEnroll(dev)
 	if data == nil{
-		fmt.Println("Houston....")
-		gofprint.GoCloseDevice(dev)
+		fmt.Println("Fingerprint not properly captured....")
+		os.Exit(1)
 	}
 
 	//If you'd like to compare with fingerprint data in the original fp_print_data format

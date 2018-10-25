@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"gofprint"
+	"github.com/caws/go-fprint"
 )
 
 func main() {
@@ -17,15 +17,15 @@ func main() {
 	fmt.Println("Opened device. \n It's now time to enroll your FIRST fingerprint.")
 	data := gofprint.GoEnroll(dev)
 	if data == nil{
-		fmt.Println("Houston....")
-		gofprint.GoCloseDevice(dev)
+		fmt.Println("Fingerprint not properly captured....")
+		os.Exit(1)
 	}
 
 	fmt.Println("It's now time to enroll your SECOND fingerprint.")
 	data2 := gofprint.GoEnroll(dev)
 	if data2 == nil{
-		fmt.Println("Houston....")
-		gofprint.GoCloseDevice(dev)
+		fmt.Println("Fingerprint not properly captured....")
+		os.Exit(1)
 	}
 
 	//If you'd like to check one's fingerprint against many fingerprints in a [][]byte slice
