@@ -10,7 +10,7 @@ while using Go's garbage collection features and its data structures like []byte
 To install this package, all you have to do is run the following command.
 
 ```
-$ go get github.com/caws/gofprint
+$ go get github.com/caws/go-fprint
 ```
 
 ## Get started
@@ -31,7 +31,7 @@ $ go build singlePrint.go
 $ sudo ./singleFprint
 ```
 
-PS: You need to use the sudo command to allow access the device.
+PS: You need to use the sudo command to allow low level access to the device.
 
 ## Issues
 
