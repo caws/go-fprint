@@ -35,7 +35,7 @@ PS: You need to use the sudo command to allow low level access to the device.
 
 ## Issues
 
-I tried to clean up the code and get rid of all bugs I could before releasing it as a package,
+I tried to clean up the code and get rid of all the bugs that I could before releasing it as a package,
 however, bugs are stubborn and sometimes hide in plain sight.
 
 So, in case you find a bug, let me know or create a pull request. I'll be more than happy to review and accept it if need be.
